@@ -13,64 +13,64 @@ USE Stage
 GO
 
 CREATE TABLE [CASE_REPORT] (
-  [Outcome] varchar(20),
-  [Age_Group] varchar(20),
-  [Gender] varchar(8),
-  [Reporting_PHU] varchar(100),
-  [SpecimenDate] datetime,
-  [Reported_Date] datetime,
-  [Reporting_PHU_City] varchar(60),
-  [TestReported_Date] datetime,
-  [CaseAcquisition_info] varchar(100),
-  [AccurateEpisode_DT] datetime,
-  [Reporting_PHU_Address] varchar(100),
-  [Reporting_PHU_Website] varchar(100),
-  [OutbreakRelated] varchar(4),
+  [Outcome] varchar(50),
+  [Age_Group] varchar(50),
+  [Gender] varchar(50),
+  [Reporting_PHU] varchar(255),
+  [SpecimenDate] date,
+  [Reported_Date] date,
+  [Reporting_PHU_City] varchar(50),
+  [TestReported_Date] date,
+  [CaseAcquisition_info] varchar(50),
+  [AccurateEpisode_DT] date,
+  [Reporting_PHU_Address] varchar(255),
+  [Reporting_PHU_Website] varchar(255),
+  [OutbreakRelated] varchar(20),
   [Reporting_PHU_Lattitude] float,
   [Reporting_PHU_Longitude] float,
-  [Reporting_PHU_Postal_Code] varchar(8)
+  [Reporting_PHU_Postal_Code] varchar(20)
 );
 
 CREATE TABLE [CASE_DETAIL] (
   [ObjectID] int,
   [Row_ID] int,
-  [Reported_Date] datetime,
-  [Reporting_PHU] varchar(100),
-  [Age_Group] varchar(20),
-  [Gender] varchar(8),
-  [Exposure] varchar(100),
-  [Case_Status] varchar(40),
-  [Province] varchar(20)
+  [Reported_Date] date,
+  [Reporting_PHU] varchar(255),
+  [Age_Group] varchar(50),
+  [Gender] varchar(50),
+  [Exposure] varchar(50),
+  [Case_Status] varchar(50),
+  [Province] varchar(50)
 );
 
 CREATE TABLE [ONGOING_OUTBREAK] (
-  [Reported_Date] datetime,
+  [Reported_Date] date,
   [PHU_ID] int,
-  [Outbreak_Group] varchar(20),
+  [Outbreak_Group] varchar(50),
   [Number_Ongoing_Outbreaks] int
 );
 
 CREATE TABLE [PHU] (
   [PHU_ID] int,
-  [Reporting_PHU] varchar(100),
-  [Reporting_PHU_Address] varchar(100),
-  [Reporting_PHU_City] varchar(60),
-  [Reporting_PHU_Postal_Code] varchar(8),
-  [Reporting_PHU_Website] varchar(100),
-  [Reporting_PHU_Lattitude] int,
-  [Reporting_PHU_Longitude] int
+  [Reporting_PHU] varchar(255),
+  [Reporting_PHU_Address] varchar(255),
+  [Reporting_PHU_City] varchar(50),
+  [Reporting_PHU_Postal_Code] varchar(20),
+  [Reporting_PHU_Website] varchar(255),
+  [Reporting_PHU_Latitude] bigint,
+  [Reporting_PHU_Longitude] bigint
 );
 
 CREATE TABLE [PHU_GROUP] (
   [Reporting_PHU_Group] varchar(100),
-  [Reporting_PHU_City] varchar(60),
-  [Reporting_PHU] varchar(100)
+  [Reporting_PHU_City] varchar(50),
+  [Reporting_PHU] varchar(255)
 );
 
 CREATE TABLE [VACCINES] (
-  [Reported_Date] datetime,
+  [Reported_Date] date,
   [PHU_ID] int,
-  [Age_Group] varchar(20),
+  [Age_Group] varchar(50),
   [One_Dose] int,
   [Second_Dose] int,
   [Fully_Vaccinated] int,
