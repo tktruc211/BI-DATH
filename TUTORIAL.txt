@@ -1,0 +1,9 @@
+Các bước để chạy file CleanData từ github
+(do folder có chứa nhiều file csv nên nặng quá không push lên github được)
+-----
+- B1: clone repo về máy
+- B2: tải datasource mẫu của đề bài vào folder này (không commit datasource lên github)
+- B3: pull phần CleanData về
+- B4: tạo thêm folder Datasource_Cleaned trong folder này
+- B5: mở file CleanData bằng VSCode và run all
+- B6: vào folder Datasource_Cleaned và sử dụng các datasource trong đó
