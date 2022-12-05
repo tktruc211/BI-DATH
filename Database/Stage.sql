@@ -26,7 +26,7 @@ CREATE TABLE [CASE_REPORT] (
   [Reporting_PHU_Address] varchar(255),
   [Reporting_PHU_Website] varchar(255),
   [OutbreakRelated] varchar(20),
-  [Reporting_PHU_Lattitude] float,
+  [Reporting_PHU_Latitude] float,
   [Reporting_PHU_Longitude] float,
   [Reporting_PHU_Postal_Code] varchar(20)
 )
