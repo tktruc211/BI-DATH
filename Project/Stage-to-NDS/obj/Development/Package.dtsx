@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="57"
-  DTS:VersionGUID="{F4E9F466-60B0-4ED5-A504-83C865827709}">
+  DTS:VersionBuild="61"
+  DTS:VersionGUID="{3826BF7F-80F5-4377-8C37-991AD7CA6ED6}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -7165,6 +7165,26 @@ where [refTable].[PHU_ID] = ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="130.4,41.6"
+          Id="Package\Case_Detail\Insert data"
+          TopLeft="552.309529891631,344.470591313286" />
+        <NodeLayout
+          Size="182.4,41.6"
+          Id="Package\Case_Detail\Lookup CaseDetail_ID"
+          TopLeft="337,208" />
+        <NodeLayout
+          Size="220,41.6"
+          Id="Package\Case_Detail\Thêm cột Created và Updated"
+          TopLeft="504.166666666667,276.666666666667" />
+        <NodeLayout
+          Size="136,41.6"
+          Id="Package\Case_Detail\Update data"
+          TopLeft="211,350.5" />
+        <NodeLayout
+          Size="165.6,41.6"
+          Id="Package\Case_Detail\Thêm cột Updated"
+          TopLeft="204.166666666667,280.833333333333" />
+        <NodeLayout
           Size="200.8,41.6"
           Id="Package\Case_Detail\Load Case_Detail in Stage"
           TopLeft="322.142862628917,26.0000003646402" />
@@ -7172,40 +7192,6 @@ where [refTable].[PHU_ID] = ?</property>
           Size="187.2,41.6"
           Id="Package\Case_Detail\Lookup Reporting_PHU"
           TopLeft="329.285719893417,119.294119320114" />
-        <NodeLayout
-          Size="182.4,41.6"
-          Id="Package\Case_Detail\Lookup CaseDetail_ID"
-          TopLeft="337,208" />
-        <NodeLayout
-          Size="136,41.6"
-          Id="Package\Case_Detail\Update data"
-          TopLeft="211,350.5" />
-        <NodeLayout
-          Size="130.4,41.6"
-          Id="Package\Case_Detail\Insert data"
-          TopLeft="552.309529891631,344.470591313286" />
-        <EdgeLayout
-          Id="Package\Case_Detail.Paths[OLE DB Source Output]"
-          TopLeft="422.714291261167,67.6000003646402">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,51.6941189554736"
-              Start="0,0"
-              End="0,44.1941189554736">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,44.1941189554736" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Case_Detail.Paths[Lookup Match Output]"
           TopLeft="425.542859946709,160.894119320114">
@@ -7230,10 +7216,6 @@ where [refTable].[PHU_ID] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="220,41.6"
-          Id="Package\Case_Detail\Thêm cột Created và Updated"
-          TopLeft="504.166666666667,276.666666666667" />
         <EdgeLayout
           Id="Package\Case_Detail.Paths[Lookup Error Output]"
           TopLeft="457.266666666667,249.6">
@@ -7266,8 +7248,30 @@ where [refTable].[PHU_ID] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="32.5836132812501,15.967884057971,91.7327734375,11.609375"
+              BoundingBox="32.58361328125,15.967884057971,91.7327734375,11.609375"
               RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Case_Detail.Paths[Derived Column Output1]"
+          TopLeft="282.983333333333,322.433333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,28.0666666666665"
+              Start="0,0"
+              End="0,20.5666666666665">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.5666666666665" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7292,10 +7296,28 @@ where [refTable].[PHU_ID] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="165.6,41.6"
-          Id="Package\Case_Detail\Thêm cột Updated"
-          TopLeft="204.166666666667,280.833333333333" />
+        <EdgeLayout
+          Id="Package\Case_Detail.Paths[OLE DB Source Output]"
+          TopLeft="422.714291261167,67.6000003646402">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,51.6941189554736"
+              Start="0,0"
+              End="0,44.1941189554736">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,44.1941189554736" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Case_Detail.Paths[Lookup Match Output1]"
           TopLeft="399.133333333333,249.6">
@@ -7332,31 +7354,45 @@ where [refTable].[PHU_ID] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Case_Detail.Paths[Derived Column Output1]"
-          TopLeft="282.983333333333,322.433333333333">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,28.0666666666665"
-              Start="0,0"
-              End="0,20.5666666666665">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.5666666666665" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Case_Detail\Insert data">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Case_Detail\Lookup CaseDetail_ID">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[CASE_DETAIL]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Case_Detail\Load Case_Detail in Stage">
     <Properties>
@@ -7393,151 +7429,59 @@ where [refTable].[PHU_ID] = ?</property>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Case_Detail\Insert data">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Case_Detail\Lookup CaseDetail_ID">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[CASE_DETAIL]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Case_Report">
     <LayoutInfo>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="130.4,41.6"
-          Id="Package\Case_Report\Insert data"
-          TopLeft="578.571429654043,306.411765735455" />
-        <NodeLayout
-          Size="205.6,41.6"
-          Id="Package\Case_Report\Load Case_Report in Stage"
-          TopLeft="342.999997700964,11.1764701699716" />
-        <NodeLayout
-          Size="136,41.6"
-          Id="Package\Case_Report\Update data"
-          TopLeft="224.285718105277,314.000004011042" />
+          Size="220,41.6"
+          Id="Package\Case_Report\Thêm cột Created và Updated"
+          TopLeft="535.000009110996,241.647062212538" />
         <NodeLayout
           Size="152.8,41.6"
           Id="Package\Case_Report\Lookup PHU_ID"
           TopLeft="371.714283427414,89.7647053461175" />
         <NodeLayout
+          Size="165.6,41.6"
+          Id="Package\Case_Report\Thêm cột Updated"
+          TopLeft="208.571432123379,244.870591130966" />
+        <NodeLayout
+          Size="205.6,41.6"
+          Id="Package\Case_Report\Load Case_Report in Stage"
+          TopLeft="342.999997700964,11.1764701699716" />
+        <NodeLayout
           Size="186.4,41.6"
           Id="Package\Case_Report\Lookup CaseReport_ID"
           TopLeft="357.142863224964,169.764708263239" />
+        <NodeLayout
+          Size="136,41.6"
+          Id="Package\Case_Report\Update data"
+          TopLeft="224.285718105277,314.000004011042" />
+        <NodeLayout
+          Size="130.4,41.6"
+          Id="Package\Case_Report\Insert data"
+          TopLeft="578.571429654043,306.411765735455" />
         <EdgeLayout
-          Id="Package\Case_Report.Paths[Lookup Match Output]"
-          TopLeft="449.228573326189,131.364705346117">
+          Id="Package\Case_Report.Paths[Derived Column Output1]"
+          TopLeft="291.828575114328,286.470591130966">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,38.4000029171212"
+              EndConnector="0,27.5294128800754"
               Start="0,0"
-              End="0,30.9000029171212">
+              End="0,20.0294128800754">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,30.9000029171212" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,9.6453139585606,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Case_Report.Paths[OLE DB Source Output]"
-          TopLeft="446.957140564189,52.7764701699716">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,36.9882351761459"
-              Start="0,0"
-              End="0,29.4882351761459">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,29.4882351761459" />
+                    End="0,20.0294128800754" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="220,41.6"
-          Id="Package\Case_Report\Thêm cột Created và Updated"
-          TopLeft="535.000009110996,241.647062212538" />
-        <EdgeLayout
-          Id="Package\Case_Report.Paths[Lookup Error Output]"
-          TopLeft="480.076196558297,211.364708263239">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="164.923812552699,30.2823539492992"
-              Start="0,0"
-              End="164.923812552699,22.7823539492992">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,8.26757487648205" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,8.26757487648205"
-                    Point2="0,12.2675748764821"
-                    Point3="4,12.2675748764821" />
-                  <mssgle:LineSegment
-                    End="160.923812552699,12.2675748764821" />
-                  <mssgle:CubicBezierSegment
-                    Point1="160.923812552699,12.2675748764821"
-                    Point2="164.923812552699,12.2675748764821"
-                    Point3="164.923812552699,16.2675748764821" />
-                  <mssgle:LineSegment
-                    End="164.923812552699,22.7823539492992" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="36.5955195575992,17.2675748764821,91.7327734375,11.609375"
-              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7562,10 +7506,28 @@ where [refTable].[PHU_ID] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="165.6,41.6"
-          Id="Package\Case_Report\Thêm cột Updated"
-          TopLeft="208.571432123379,244.870591130966" />
+        <EdgeLayout
+          Id="Package\Case_Report.Paths[OLE DB Source Output]"
+          TopLeft="446.957140564189,52.7764701699716">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,36.9882351761459"
+              Start="0,0"
+              End="0,29.4882351761459">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.4882351761459" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Case_Report.Paths[Lookup Match Output1]"
           TopLeft="420.609529891631,211.364708263239">
@@ -7603,30 +7565,91 @@ where [refTable].[PHU_ID] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Case_Report.Paths[Derived Column Output1]"
-          TopLeft="291.828575114328,286.470591130966">
+          Id="Package\Case_Report.Paths[Lookup Match Output]"
+          TopLeft="449.228573326189,131.364705346117">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,27.5294128800754"
+              EndConnector="0,38.4000029171212"
               Start="0,0"
-              End="0,20.0294128800754">
+              End="0,30.9000029171212">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.0294128800754" />
+                    End="0,30.9000029171212" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,9.6453139585606,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Case_Report.Paths[Lookup Error Output]"
+          TopLeft="480.076196558297,211.364708263239">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="164.923812552699,30.2823539492992"
+              Start="0,0"
+              End="164.923812552699,22.7823539492992">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,8.26757487648205" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,8.26757487648205"
+                    Point2="0,12.2675748764821"
+                    Point3="4,12.2675748764821" />
+                  <mssgle:LineSegment
+                    End="160.923812552699,12.2675748764821" />
+                  <mssgle:CubicBezierSegment
+                    Point1="160.923812552699,12.2675748764821"
+                    Point2="164.923812552699,12.2675748764821"
+                    Point3="164.923812552699,16.2675748764821" />
+                  <mssgle:LineSegment
+                    End="164.923812552699,22.7823539492992" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="36.5955195575995,17.2675748764821,91.7327734375,11.609375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Case_Report\Lookup PHU_ID">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[PHU]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Case_Report\Load Case_Report in Stage">
     <Properties>
@@ -7676,34 +7699,23 @@ where [refTable].[PHU_ID] = ?</property>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Case_Report\Lookup PHU_ID">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[PHU]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Ongoing_Outbreak">
     <LayoutInfo>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="220,41.6"
+          Id="Package\Ongoing_Outbreak\Thêm cột Created và Updated"
+          TopLeft="660.909090909091,200" />
+        <NodeLayout
+          Size="234.4,41.6"
+          Id="Package\Ongoing_Outbreak\Load Ongoing_Outbreak in Stage"
+          TopLeft="451,26" />
+        <NodeLayout
+          Size="165.6,41.6"
+          Id="Package\Ongoing_Outbreak\Thêm cột Updated"
+          TopLeft="311.818181818182,200" />
         <NodeLayout
           Size="176,41.6"
           Id="Package\Ongoing_Outbreak\Lookup Outbreak_ID"
@@ -7716,36 +7728,6 @@ where [refTable].[PHU_ID] = ?</property>
           Size="130.4,41.6"
           Id="Package\Ongoing_Outbreak\Insert data"
           TopLeft="705.454545454545,286.272727272727" />
-        <NodeLayout
-          Size="234.4,41.6"
-          Id="Package\Ongoing_Outbreak\Load Ongoing_Outbreak in Stage"
-          TopLeft="451,26" />
-        <EdgeLayout
-          Id="Package\Ongoing_Outbreak.Paths[OLE DB Source Output]"
-          TopLeft="567.85,67.6">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,43.9"
-              Start="0,0"
-              End="0,36.4">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,36.4" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="220,41.6"
-          Id="Package\Ongoing_Outbreak\Thêm cột Created và Updated"
-          TopLeft="660.909090909091,200" />
         <EdgeLayout
           Id="Package\Ongoing_Outbreak.Paths[Lookup Error Output]"
           TopLeft="567.5,153.1">
@@ -7783,6 +7765,30 @@ where [refTable].[PHU_ID] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\Ongoing_Outbreak.Paths[Derived Column Output1]"
+          TopLeft="397.263636363636,241.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42.5818181818182"
+              Start="0,0"
+              End="0,35.0818181818182">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.0818181818182" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Ongoing_Outbreak.Paths[Derived Column Output]"
           TopLeft="770.781818181818,241.6">
           <EdgeLayout.Curve>
@@ -7801,13 +7807,35 @@ where [refTable].[PHU_ID] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="165.6,41.6"
-          Id="Package\Ongoing_Outbreak\Thêm cột Updated"
-          TopLeft="311.818181818182,200" />
+        <EdgeLayout
+          Id="Package\Ongoing_Outbreak.Paths[OLE DB Source Output]"
+          TopLeft="567.85,67.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,43.9"
+              Start="0,0"
+              End="0,36.4">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,36.4" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Ongoing_Outbreak.Paths[Lookup Match Output]"
           TopLeft="539.5,153.1">
@@ -7844,56 +7872,11 @@ where [refTable].[PHU_ID] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Ongoing_Outbreak.Paths[Derived Column Output1]"
-          TopLeft="397.263636363636,241.6">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,42.5818181818182"
-              Start="0,0"
-              End="0,35.0818181818182">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,35.0818181818182" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Ongoing_Outbreak\Lookup Outbreak_ID">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[ONGOING_OUTBREAK]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Ongoing_Outbreak\Insert data">
+    design-time-name="Package\Ongoing_Outbreak\Load Ongoing_Outbreak in Stage">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -7906,7 +7889,30 @@ where [refTable].[PHU_ID] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Ongoing_Outbreak\Load Ongoing_Outbreak in Stage">
+    design-time-name="Package\Ongoing_Outbreak\Lookup Outbreak_ID">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[ONGOING_OUTBREAK]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Ongoing_Outbreak\Insert data">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -7932,41 +7938,25 @@ where [refTable].[PHU_ID] = ?</property>
           Id="Package\PHU\Lookup PHU_ID"
           TopLeft="447.5,173" />
         <NodeLayout
-          Size="155.2,41.6"
-          Id="Package\PHU\Lookup Province"
-          TopLeft="444.5,91.1666666666667" />
+          Size="220,41.6"
+          Id="Package\PHU\Thêm cột Created và Updated"
+          TopLeft="600.833333333333,244.166666666667" />
         <NodeLayout
           Size="164.8,41.6"
           Id="Package\PHU\Load PHU in stage"
           TopLeft="440.333333333333,7.66666666666667" />
         <NodeLayout
+          Size="165.6,41.6"
+          Id="Package\PHU\Thêm cột Updated"
+          TopLeft="280.833333333333,242.333333333333" />
+        <NodeLayout
+          Size="155.2,41.6"
+          Id="Package\PHU\Lookup Province"
+          TopLeft="444.5,91.1666666666667" />
+        <NodeLayout
           Size="130.4,41.6"
           Id="Package\PHU\Insert data"
           TopLeft="650,310.666666666667" />
-        <EdgeLayout
-          Id="Package\PHU.Paths[Lookup Match Output]"
-          TopLeft="523,132.766666666667">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,40.2333333333332"
-              Start="0,0"
-              End="0,32.7333333333332">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,32.7333333333332" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,10.5619791666666,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\PHU.Paths[OLE DB Source Output]"
           TopLeft="522.416666666667,49.2666666666667">
@@ -7989,72 +7979,6 @@ where [refTable].[PHU_ID] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="220,41.6"
-          Id="Package\PHU\Thêm cột Created và Updated"
-          TopLeft="600.833333333333,244.166666666667" />
-        <EdgeLayout
-          Id="Package\PHU.Paths[Lookup Error Output]"
-          TopLeft="523.9,214.6">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="186.933333333333,29.5666666666668"
-              Start="0,0"
-              End="186.933333333333,22.0666666666668">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,10.7833333333334" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,10.7833333333334"
-                    Point2="0,14.7833333333334"
-                    Point3="4,14.7833333333334" />
-                  <mssgle:LineSegment
-                    End="182.933333333333,14.7833333333334" />
-                  <mssgle:CubicBezierSegment
-                    Point1="182.933333333333,14.7833333333334"
-                    Point2="186.933333333333,14.7833333333334"
-                    Point3="186.933333333333,18.7833333333334" />
-                  <mssgle:LineSegment
-                    End="186.933333333333,22.0666666666668" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="47.6002799479167,19.7833333333334,91.7327734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\PHU.Paths[Derived Column Output]"
-          TopLeft="713.016666666667,285.766666666667">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,24.9000000000004"
-              Start="0,0"
-              End="0,17.4000000000004">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,17.4000000000004" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="165.6,41.6"
-          Id="Package\PHU\Thêm cột Updated"
-          TopLeft="280.833333333333,242.333333333333" />
         <EdgeLayout
           Id="Package\PHU.Paths[Lookup Match Output1]"
           TopLeft="499.766666666667,214.6">
@@ -8092,6 +8016,66 @@ where [refTable].[PHU_ID] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\PHU.Paths[Lookup Match Output]"
+          TopLeft="523,132.766666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,40.2333333333332"
+              Start="0,0"
+              End="0,32.7333333333332">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.7333333333332" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,10.5619791666666,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\PHU.Paths[Lookup Error Output]"
+          TopLeft="523.9,214.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="186.933333333333,29.5666666666668"
+              Start="0,0"
+              End="186.933333333333,22.0666666666668">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,10.7833333333334" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,10.7833333333334"
+                    Point2="0,14.7833333333334"
+                    Point3="4,14.7833333333334" />
+                  <mssgle:LineSegment
+                    End="182.933333333333,14.7833333333334" />
+                  <mssgle:CubicBezierSegment
+                    Point1="182.933333333333,14.7833333333334"
+                    Point2="186.933333333333,14.7833333333334"
+                    Point3="186.933333333333,18.7833333333334" />
+                  <mssgle:LineSegment
+                    End="186.933333333333,22.0666666666668" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="47.6002799479165,19.7833333333334,91.7327734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\PHU.Paths[Derived Column Output1]"
           TopLeft="365.066666666667,283.933333333333">
           <EdgeLayout.Curve>
@@ -8113,6 +8097,28 @@ where [refTable].[PHU_ID] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\PHU.Paths[Derived Column Output]"
+          TopLeft="713.016666666667,285.766666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,24.9000000000004"
+              Start="0,0"
+              End="0,17.4000000000004">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.4000000000004" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -8122,7 +8128,7 @@ where [refTable].[PHU_ID] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -8132,7 +8138,7 @@ where [refTable].[PHU_ID] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -8194,13 +8200,9 @@ where [refTable].[PHU_ID] = ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="181.6,41.6"
-          Id="Package\PHU_Group\Lookup PHUGroup_ID"
-          TopLeft="435.333333333333,177" />
-        <NodeLayout
-          Size="136,41.6"
-          Id="Package\PHU_Group\Update data"
-          TopLeft="303,324.833333333334" />
+          Size="165.6,41.6"
+          Id="Package\PHU_Group\Thêm cột Updated"
+          TopLeft="287.5,255" />
         <NodeLayout
           Size="200.8,41.6"
           Id="Package\PHU_Group\Load PHU_Group in Stage"
@@ -8210,33 +8212,21 @@ where [refTable].[PHU_ID] = ?</property>
           Id="Package\PHU_Group\Lookup PHU_ID"
           TopLeft="451.833333333333,96.5" />
         <NodeLayout
+          Size="136,41.6"
+          Id="Package\PHU_Group\Update data"
+          TopLeft="303,324.833333333334" />
+        <NodeLayout
           Size="130.4,41.6"
           Id="Package\PHU_Group\Insert data"
           TopLeft="662.166666666667,325.166666666667" />
-        <EdgeLayout
-          Id="Package\PHU_Group.Paths[Lookup Match Output]"
-          TopLeft="527.183333333333,138.1">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,38.9"
-              Start="0,0"
-              End="0,31.4">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.4" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,9.8953125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="181.6,41.6"
+          Id="Package\PHU_Group\Lookup PHUGroup_ID"
+          TopLeft="435.333333333333,177" />
+        <NodeLayout
+          Size="220,41.6"
+          Id="Package\PHU_Group\Thêm cột Created và Updated"
+          TopLeft="612.5,254.166666666667" />
         <EdgeLayout
           Id="Package\PHU_Group.Paths[OLE DB Source Output]"
           TopLeft="530.733333333333,50.1">
@@ -8256,75 +8246,11 @@ where [refTable].[PHU_ID] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="220,41.6"
-          Id="Package\PHU_Group\Thêm cột Created và Updated"
-          TopLeft="612.5,254.166666666667" />
-        <EdgeLayout
-          Id="Package\PHU_Group.Paths[Lookup Error Output]"
-          TopLeft="555.066666666666,218.6">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="167.433333333334,35.5666666666667"
-              Start="0,0"
-              End="167.433333333334,28.0666666666667">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,10.4130422125182" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,10.4130422125182"
-                    Point2="0,14.4130422125182"
-                    Point3="4,14.4130422125182" />
-                  <mssgle:LineSegment
-                    End="163.433333333334,14.4130422125182" />
-                  <mssgle:CubicBezierSegment
-                    Point1="163.433333333334,14.4130422125182"
-                    Point2="167.433333333334,14.4130422125182"
-                    Point3="167.433333333334,18.4130422125182" />
-                  <mssgle:LineSegment
-                    End="167.433333333334,28.0666666666667" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="37.8502799479168,19.4130422125182,91.7327734375,11.609375"
+              BoundingBox="0,0,0,0"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\PHU_Group.Paths[Derived Column Output]"
-          TopLeft="724.933333333334,295.766666666667">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,29.4"
-              Start="0,0"
-              End="0,21.9">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,21.9" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="165.6,41.6"
-          Id="Package\PHU_Group\Thêm cột Updated"
-          TopLeft="287.5,255" />
         <EdgeLayout
           Id="Package\PHU_Group.Paths[Lookup Match Output1]"
           TopLeft="497.2,218.6">
@@ -8362,6 +8288,66 @@ where [refTable].[PHU_ID] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\PHU_Group.Paths[Lookup Match Output]"
+          TopLeft="527.183333333333,138.1">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,38.9"
+              Start="0,0"
+              End="0,31.4">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.4" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,9.8953125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\PHU_Group.Paths[Lookup Error Output]"
+          TopLeft="555.066666666666,218.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="167.433333333334,35.5666666666667"
+              Start="0,0"
+              End="167.433333333334,28.0666666666667">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,10.4130422125182" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,10.4130422125182"
+                    Point2="0,14.4130422125182"
+                    Point3="4,14.4130422125182" />
+                  <mssgle:LineSegment
+                    End="163.433333333334,14.4130422125182" />
+                  <mssgle:CubicBezierSegment
+                    Point1="163.433333333334,14.4130422125182"
+                    Point2="167.433333333334,14.4130422125182"
+                    Point3="167.433333333334,18.4130422125182" />
+                  <mssgle:LineSegment
+                    End="167.433333333334,28.0666666666667" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="37.8502799479168,19.4130422125182,91.7327734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\PHU_Group.Paths[Derived Column Output1]"
           TopLeft="370.65,296.6">
           <EdgeLayout.Curve>
@@ -8380,50 +8366,40 @@ where [refTable].[PHU_ID] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\PHU_Group.Paths[Derived Column Output]"
+          TopLeft="724.933333333334,295.766666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,29.4"
+              Start="0,0"
+              End="0,21.9">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.9" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\PHU_Group\Lookup PHUGroup_ID">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[PHU_GROUP]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\PHU_Group\Load PHU_Group in Stage">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\PHU_Group\Insert data">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -8458,11 +8434,59 @@ where [refTable].[PHU_ID] = ?</property>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\PHU_Group\Insert data">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\PHU_Group\Lookup PHUGroup_ID">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[PHU_GROUP]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Vaccines">
     <LayoutInfo>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="220,41.6"
+          Id="Package\Vaccines\Thêm cột Created và Updated"
+          TopLeft="699.136363636364,216.409090909091" />
+        <NodeLayout
+          Size="165.6,41.6"
+          Id="Package\Vaccines\Thêm cột Updated"
+          TopLeft="353.681818181818,214.590909090909" />
+        <NodeLayout
+          Size="168.8,41.6"
+          Id="Package\Vaccines\Lookup Vaccine_ID"
+          TopLeft="519.5,122.5" />
         <NodeLayout
           Size="186.4,41.6"
           Id="Package\Vaccines\Load Vaccines in Stage"
@@ -8475,10 +8499,6 @@ where [refTable].[PHU_ID] = ?</property>
           Size="136,41.6"
           Id="Package\Vaccines\Update data"
           TopLeft="366.272727272727,297.181818181818" />
-        <NodeLayout
-          Size="168.8,41.6"
-          Id="Package\Vaccines\Lookup Vaccine_ID"
-          TopLeft="519.5,122.5" />
         <EdgeLayout
           Id="Package\Vaccines.Paths[OLE DB Source Output]"
           TopLeft="607.05,76.6">
@@ -8501,10 +8521,6 @@ where [refTable].[PHU_ID] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="165.6,41.6"
-          Id="Package\Vaccines\Thêm cột Updated"
-          TopLeft="353.681818181818,214.590909090909" />
         <EdgeLayout
           Id="Package\Vaccines.Paths[Lookup Match Output]"
           TopLeft="603.9,164.1">
@@ -8542,32 +8558,6 @@ where [refTable].[PHU_ID] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Vaccines.Paths[Derived Column Output]"
-          TopLeft="435.377272727273,256.190909090909">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,40.990909090909"
-              Start="0,0"
-              End="0,33.490909090909">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,33.490909090909" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="220,41.6"
-          Id="Package\Vaccines\Thêm cột Created và Updated"
-          TopLeft="699.136363636364,216.409090909091" />
-        <EdgeLayout
           Id="Package\Vaccines.Paths[Lookup Error Output]"
           TopLeft="630.7,164.1">
           <EdgeLayout.Curve>
@@ -8599,7 +8589,7 @@ where [refTable].[PHU_ID] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="43.3517950994318,26.2183354673495,91.7327734375,11.609375"
+              BoundingBox="43.351795099432,26.2183354673495,91.7327734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -8625,9 +8615,54 @@ where [refTable].[PHU_ID] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Vaccines.Paths[Derived Column Output]"
+          TopLeft="435.377272727273,256.190909090909">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,40.990909090909"
+              Start="0,0"
+              End="0,33.490909090909">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.490909090909" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Vaccines\Lookup Vaccine_ID">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[VACCINES]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Vaccines\Load Vaccines in Stage">
     <Properties>
@@ -8651,29 +8686,6 @@ where [refTable].[PHU_ID] = ?</property>
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Vaccines\Lookup Vaccine_ID">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[VACCINES]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

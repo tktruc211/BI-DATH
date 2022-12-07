@@ -6,10 +6,6 @@ DROP DATABASE NDS
 GO
 */
 
-/*
-Truncate table PHU
-*/
-
 CREATE DATABASE NDS
 GO
 
