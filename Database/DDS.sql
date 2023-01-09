@@ -6,6 +6,7 @@ DROP DATABASE DDS
 GO
 */
 
+
 CREATE DATABASE DDS
 GO
 
@@ -50,7 +51,7 @@ GO
 
 CREATE TABLE dim_Geography
 (	
-	[PHU_ID] int IDENTITY(1, 1) not null, 
+	[PHU_ID] int not null, 
 	[Reporting_PHU] varchar(255),
 	[Reporting_PHU_Address] varchar(255),
 	[Reporting_PHU_City] varchar(50),
@@ -59,14 +60,15 @@ CREATE TABLE dim_Geography
 	[Reporting_PHU_Website] varchar(255),
 	[Reporting_PHU_Latitude] bigint,
 	[Reporting_PHU_Longitude] bigint,
+	[PHUGroup_ID] int
 )
 GO
+
 
 CREATE TABLE dim_PHU_GROUP
 (	
 	[PHUGroup_ID] int IDENTITY(1, 1) not null, 
-	[Reporting_PHU_Group] varchar(255),
-	[PHU_ID] int
+	[Reporting_PHU_Group] varchar(255)
 )
 GO
 
